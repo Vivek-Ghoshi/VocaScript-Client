@@ -17,7 +17,7 @@ const startListening = async () => {
   try {
     const base64Audio = await recordAudio();
     // console.log("📤 Sending to server...");
-    const res = await fetch('http://localhost:4000/api/voice/ask', {
+    const res = await fetch('https://vocascript-server.onrender.com/api/voice/ask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ audioBase64: base64Audio }),
