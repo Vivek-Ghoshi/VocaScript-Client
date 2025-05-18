@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.chat::-webkit-scrollbar{
+  width: 8px;
+}
+
+.chat::-webkit-scrollbar-thumb{
+    background-color: burlywood;
+    border-radius: 8px;
+}
